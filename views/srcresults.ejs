@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+
+<div class="container">
+
+  <h2 class="big-heading section-heading">Search Results</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mb-5 justify-content-center">
+
+    <% foundPosts.forEach((post) => { %>
+    <div class="col">
+      <div class="card">
+        <img src="<%= post.imageUrl %>" class="card-img-top p-2 rounded" alt="">
+        <div class="card-body">
+          <h4 class="card-title"><%= post.title %></h4>
+          <a href="/posts/<%= post._id %>" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+    <% }); %>
+
+  </div>
+</div>
+
+<%- include('partials/footer'); -%>

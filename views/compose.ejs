@@ -1,0 +1,31 @@
+<%- include('partials/header'); -%>
+
+<div class="compose-block">
+  <h1 class="big-heading section-heading">Compose Post</h1>
+
+  <form class="" action="/compose" method="post">
+    <div class="form-group">
+      <label for="postTitle">Title</label>
+      <input type="text" class="form-control" id="postTitle" name="postTitle">
+    </div>
+    <p></p>
+    <div class="form-group">
+      <label for="postCountry">Country</label>
+      <input type="text" class="form-control" id="postCountry" name="postCountry">
+    </div>
+    <p></p>
+    <div class="form-group">
+      <label for="postImage">Image URL</label>
+      <input type="text" class="form-control" id="postImage" name="postImage">
+    </div>
+    <p></p>
+    <div class="form-group">
+      <label for="postBody">Post</label>
+      <textarea class="form-control" id="postBody" name="postBody" rows="7"></textarea>
+    </div>
+    <p></p>
+    <button type="submit" class="btn btn-primary">Publish</button>
+  </form>
+</div>
+
+<%- include('partials/footer'); -%>

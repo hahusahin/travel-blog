@@ -1,0 +1,153 @@
+body{
+  /* background-color: #D3DEDC; */
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.big-heading{
+  font-family: 'Mukta', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  color: #444444;
+  margin: 16px 0;
+  /* text-indent: 20px; */
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.container-fluid{
+  padding: 0 4%;
+}
+
+/* NAVBAR AND ITS BACKGROUND*/
+.top-header {
+  background-image: url("../images/motto-image.jpg");
+  min-height: 250px;
+  position: relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-container {
+  position: absolute;
+  padding-top: 1%;
+}
+
+.navbar{
+  padding: 0.5% 4%;
+}
+
+.nav-item{
+  padding: 0 10px;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.2rem;
+}
+
+.search-bar{
+  padding-left: 2rem;
+}
+
+.name-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #632626;
+}
+
+.top-heading{
+  font-family: 'Merriweather', sans-serif;
+  font-size: calc(100% + 1.5vw + 2.5vh);
+}
+
+
+/* RECENT POSTS & COUNTRIES */
+.section-heading{
+  color: #FF5959;
+  padding: 2rem 0;
+}
+
+.card-title{
+  margin-bottom: 1rem;
+}
+
+.gallery-item{
+  margin-bottom: 2rem;
+}
+
+.list-group-item{
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+/* CAROUSEL */
+#quotes{
+  margin: 5% 0;
+  background-color: #EA5C2B;
+  color:#fff;
+}
+
+.carousel-item{
+  padding: 5% 15%;
+}
+
+#footer{
+  padding: 0 15% 2%;
+}
+
+.footer-link{
+  margin: 10px 15px;
+  display: inline-block;
+}
+
+
+
+/* COMPOSE PAGE */
+.compose-block{
+  padding: 0 15% 5%;
+}
+
+
+/* SINGLE POST PAGE */
+.post-block{
+  padding: 5% 0;
+  text-align: justify;
+}
+
+.post-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #FF5959;
+  text-align: center;
+}
+
+.post-sub-title{
+font-size: 2rem;
+font-weight: 600;
+color: #FF5959;
+}
+
+.top-posts-title{
+  font-family: 'Mukta', sans-serif;
+  font-size: 2rem;
+  color: #FF5959;
+  padding: 1rem 0;
+}
+
+
+@media (max-width:750px){
+  .name-container {
+    visibility: hidden;
+  }
+  .post-block{
+    padding: 7% 5%;
+  }
+}
