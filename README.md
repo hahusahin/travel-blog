@@ -14,7 +14,7 @@ The goal of this project is to create a simple Blog web app using Node JS - Expr
   * I've made a responsive design for all viewports..
 
 * For the back-end part:
- * I've used Node JS and Express framework for the server side.
+* * I've used Node JS and Express framework for the server side.
  * To render JS codes for the dynamic data in the client-side, I've used EJS (Embedded Javascript)
  * To store the blog posts, I've used Mongo DB Atlas.
  * To make CRUD operations on database, I've used Mongoose module of NPM
