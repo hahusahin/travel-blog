@@ -1,5 +1,4 @@
 body{
-  /* background-color: #D3DEDC; */
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -15,7 +14,6 @@ p{
   font-family: 'Montserrat', sans-serif;
   color: #444444;
   margin: 16px 0;
-  /* text-indent: 20px; */
   font-size: 1.1rem;
   line-height: 2;
 }
@@ -48,6 +46,10 @@ p{
   padding: 0 10px;
   font-family: 'Mukta', sans-serif;
   font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
 }
 
 .search-bar{
