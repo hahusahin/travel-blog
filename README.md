@@ -20,10 +20,3 @@ The goal of this project is to create a simple Blog web app using Node JS - Expr
   * To make CRUD operations on database, I've used Mongoose module of NPM
   * I've applied pagination for displaying post-cards
   * I've applied my own Restful API.
-
-### Tools/Libraries/Frameworks Used
-* Node - Express
-* Mongo DB - Mongoose
-* EJS
-* HTML - CSS
-* Bootstrap
