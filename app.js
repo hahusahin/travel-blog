@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const ejs = require("ejs");
+const nodeMailer = require('nodemailer');
 const dotenv = require('dotenv').config();
 
 const app = express();
@@ -132,6 +133,50 @@ app.post("/compose", async(req, res)=>{
 
 app.get("/about", (req, res)=>{
   res.render("about");
+});
+
+// Contact Page to send message
+app.get("/contact", (req, res)=>{
+
+  res.render("contact", {message:""});
+})
+
+app.post("/contact", async(req, res)=>{
+  try {
+
+    const output=`
+      <p>You have a new message</p>
+      <h3>Contact details</h3>
+      <ul>
+        <li>Subject: ${req.body.subject}</li>
+        <li>FirstName: ${req.body.name}</li>
+        <li>Email: ${req.body.email}</li>
+        <li>Message: ${req.body.message}</li>
+      </ul>`
+
+    const transporter = nodeMailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASSWORD,
+      },
+      tls: { rejectUnauthorized: false}
+    });
+
+    const mailOptions = {
+      from: process.env.GMAIL_USER,
+      to: process.env.GMAIL_USER,
+      subject: "New Message from Travel Blog",
+      html: output
+    };
+
+    await transporter.sendMail(mailOptions);
+    //console.log("Message sent: %s", info.messageId);
+    res.render("contact", {message:"Your Message Sent Succesfully"});
+
+  } catch (e) {
+    res.render("error", {errorMessage: e.message});
+  }
 });
 
 

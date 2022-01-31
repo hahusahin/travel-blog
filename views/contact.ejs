@@ -1,0 +1,44 @@
+<%- include('partials/header'); -%>
+
+<div class="card border border-secondary border-2 rounded-2" style="margin: 2% 30%;">
+
+  <%if(message){%>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <%= message %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% } %>
+
+  <div class="card-body">
+    <h2 class="big-heading section-heading">Contact Us</h2>
+
+    <form action="/contact" method="post">
+
+      <div class="form-group mb-3 text-start">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+      </div>
+
+      <div class="form-group mb-3 text-start">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email Address" name="email">
+      </div>
+
+      <div class="form-group mb-3 text-start">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+      </div>
+
+      <div class="form-group mb-3 text-start">
+        <label for="name" class="form-label">Name</label>
+        <textarea class="form-control" id="iq" placeholder="Your Message" name="message" rows="5"></textarea>
+      </div>
+
+      <button class="btn btn-danger btn-lg mb-3" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+<%- include('partials/footer'); -%>
