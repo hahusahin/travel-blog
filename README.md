@@ -10,7 +10,7 @@ The goal of this project is to create a simple Blog web app using Node JS - Expr
 
 * For the frond-end part:
   * I've used Bootstrap 5 for most of the design.
-  * Whenever Bootstrap is insufficient I've applied basic HTML and CSS.
+  * Whenever Bootstrap is insufficient I've applied basic CSS.
   * I've made a responsive design for all viewports..
 
 * For the back-end part:
